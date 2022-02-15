@@ -1,0 +1,3 @@
+dependencies {
+    compile 'me.ichun.mods:iChunUtil:4.2.3:deobf'
+}

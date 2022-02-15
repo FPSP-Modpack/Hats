@@ -8,6 +8,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.FMLEmbeddedChannel;
 import cpw.mods.fml.relauncher.Side;
 import hats.addons.hatstand.common.core.CommonProxy;
+import hats.common.Hats;
 import ichun.common.core.updateChecker.ModVersionChecker;
 import ichun.common.core.updateChecker.ModVersionInfo;
 import ichun.common.iChunUtil;
@@ -16,20 +17,19 @@ import net.minecraft.block.Block;
 import java.util.EnumMap;
 
 @Mod(modid = "HatStand", name = "HatStand",
-			version = HatStand.version,
+			version = Hats.version,
 			dependencies = "required-after:Hats@[" + iChunUtil.versionMC + ".0.0,)",
             acceptableRemoteVersions = "[" + iChunUtil.versionMC +".0.0," + iChunUtil.versionMC + ".1.0)"
 				)
 public class HatStand
 {
-	public static final String version = iChunUtil.versionMC + ".0.0";
 
     public static EnumMap<Side, FMLEmbeddedChannel> channels;
 
     public static Block blockHatStand;
-	
+
 	public static int renderHatStandID;
-	
+
 	@Instance("HatStand")
 	public static HatStand instance;
 
@@ -41,6 +41,6 @@ public class HatStand
 	{
 		proxy.initMod();
 
-        ModVersionChecker.register_iChunMod(new ModVersionInfo("HatStand", iChunUtil.versionOfMC, version, false));
+        ModVersionChecker.register_iChunMod(new ModVersionInfo("HatStand", iChunUtil.versionOfMC, Hats.version, false));
 	}
 }

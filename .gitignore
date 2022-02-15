@@ -1,14 +1,32 @@
-*.class
-
-# Package Files #
-*.war
-*.ear
-
-# IDEA Files #
+.gradle
+.settings
+/.idea/
+/.vscode/
+/run/
+/build/
+/eclipse/
+.classpath
+.project
+/bin/
+/config/
+/crash-reports/
+/logs/
+options.txt
+/saves/
+usernamecache.json
+banned-ips.json
+banned-players.json
+eula.txt
+ops.json
+server.properties
+servers.dat
+usercache.json
+whitelist.json
+/out/
 *.iml
-/.idea
-
-# Gradle #
-/.gradle
-/build
-/libs
+*.ipr
+*.iws
+src/main/resources/mixins.*.json
+*.bat
+*.DS_Store
+!gradlew.bat

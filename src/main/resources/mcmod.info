@@ -1,21 +1,39 @@
-[
 {
-  "modid" : "Hats",
-  "name" : "Hats",
-  "version" : "${version}",
-  "url" : "http://ichun.us/mods/hats/",
-  "credits" : "",
-  "authors": [
-    "iChun"
-  ],
-  "description": "Adds a bunch of hats, as wells as the ability to add more, into Minecraft",
-  "logoFile" : "hatslogo.png",
-  "updateUrl" : "",
-  "parent" : "",
-  "screenshots": [
-  ],
-  "dependancies": [
-    "Forge"
-  ]
+	"modListVersion": 2,
+	"modList": [{
+		"modid": "${modId}",
+		"name": "${modName}",
+		"description": "Adds a bunch of hats, as wells as the ability to add more, into Minecraft",
+		"version": "${modVersion}",
+		"mcversion": "${minecraftVersion}",
+		"url": "https://ichun.us/mods/hats/",
+		"updateUrl": "",
+		"authorList": ["iChun"],
+		"credits": "",
+		"logoFile": "hatslogo.png",
+		"screenshots": [],
+		"parent": "",
+		"requiredMods": ["iChunUtil@[4.0.0,)"],
+		"dependencies": ["iChunUtil@[4.0.0,)"],
+		"dependants": [],
+		"useDependencyInformation": true
+	},
+	{
+		"modid": "HatStand",
+		"name": "HatStand",
+		"description": "",
+		"version": "${modVersion}",
+		"mcversion": "${minecraftVersion}",
+		"url": "https://ichun.us/",
+		"updateUrl": "",
+		"authorList": ["iChun"],
+		"credits": "",
+		"logoFile": "",
+		"screenshots": [],
+		"parent": "",
+		"requiredMods": ["iChunUtil@[4.0.0,)", "Hats"],
+		"dependencies": ["iChunUtil@[4.0.0,)", "Hats"],
+		"dependants": [],
+		"useDependencyInformation": true
+	}]
 }
-]

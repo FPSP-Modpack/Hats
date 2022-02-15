@@ -1,0 +1,9 @@
+repositories {
+    ivy {
+        name 'creeperhost'
+        artifactPattern 'https://dist.creeper.host/ichun/util/[module]-[revision](-[classifier]).[ext]'
+        metadataSources {
+            artifact()
+        }
+    }
+}

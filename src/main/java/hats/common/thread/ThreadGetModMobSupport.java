@@ -37,7 +37,7 @@ public class ThreadGetModMobSupport extends Thread
             else
             {
                 //https://raw.github.com/iChun/Hats/master/src/main/resources/assets/hats/mod/HatModMobSupport.json
-                Reader fileIn = new InputStreamReader(new URL("https://raw.github.com/iChun/Hats/master/src/main/resources/assets/hats/mod/HatModMobSupport.json").openStream());
+                Reader fileIn = new InputStreamReader(new URL("https://raw.githubusercontent.com/FPSP-Modpack/Hats/1.7.10/src/main/resources/assets/hats/mod/HatModMobSupport.json").openStream());
                 json = gson.fromJson(fileIn, Map.class);
                 fileIn.close();
             }

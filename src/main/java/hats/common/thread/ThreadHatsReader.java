@@ -41,7 +41,7 @@ public class ThreadHatsReader extends Thread
             int hatDownloaded = 0;
             try
             {
-                URL var1 = new URL("http://www.creeperrepo.net/ichun/static/hats.xml");
+                URL var1 = new URL("https://raw.githubusercontent.com/FPSP-Modpack/Hats/1.7.10/hats.xml");
 
                 DocumentBuilderFactory var2 = DocumentBuilderFactory.newInstance();
                 DocumentBuilder var3 = var2.newDocumentBuilder();
